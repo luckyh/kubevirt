@@ -1050,6 +1050,7 @@ type LaunchSecurity struct {
 	Policy          string `xml:"policy,omitempty"`
 	DHCert          string `xml:"dhCert,omitempty"`
 	Session         string `xml:"session,omitempty"`
+	HostData        string `xml:"hostData,omitempty"`
 }
 
 //END LaunchSecurity --------------------

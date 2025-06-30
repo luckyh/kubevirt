@@ -374,7 +374,8 @@
           },
           "attestation": {},
           "session": "sessionValue",
-          "dhCert": "dhCertValue"
+          "dhCert": "dhCertValue",
+          "hostData": "hostDataValue"
         }
       }
     },

@@ -1472,6 +1472,10 @@ func Convert_v1_VirtualMachineInstance_To_api_Domain(vmi *v1.VirtualMachineInsta
 			DHCert:  vmi.Spec.Domain.LaunchSecurity.SEV.DHCert,
 			Session: vmi.Spec.Domain.LaunchSecurity.SEV.Session,
 		}
+		if sevTypeStr == "sev-snp" &&
+			vmi.Spec.Domain.LaunchSecurity.SEV.HostData != "" {
+			domain.Spec.LaunchSecurity.HostData = vmi.Spec.Domain.LaunchSecurity.SEV.HostData
+		}
 		controllerDriver = &api.ControllerDriver{
 			IOMMU: "on",
 		}

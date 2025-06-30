@@ -407,6 +407,7 @@ spec:
       sev:
         attestation: {}
         dhCert: dhCertValue
+        hostData: hostDataValue
         policy:
           encryptedState: true
           secureNestedPaging: true

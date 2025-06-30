@@ -728,6 +728,8 @@ type SEV struct {
 	Session string `json:"session,omitempty"`
 	// Base64 encoded guest owner's Diffie-Hellman key.
 	DHCert string `json:"dhCert,omitempty"`
+	// 32-byte, base64-encoded, user-defined blob to provide to the guest.
+	HostData string `json:"hostData,omitempty"`
 }
 
 type SEVPolicy struct {

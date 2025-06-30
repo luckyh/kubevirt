@@ -15774,6 +15774,10 @@
       "description": "Base64 encoded guest owner's Diffie-Hellman key.",
       "type": "string"
      },
+     "hostData": {
+      "description": "32-byte, base64-encoded, user-defined blob to provide to the guest.",
+      "type": "string"
+     },
      "policy": {
       "description": "Guest policy flags as defined in AMD SEV API specification. Note: due to security reasons it is not allowed to enable guest debugging. Therefore NoDebug flag is not exposed to users and is always true.",
       "$ref": "#/definitions/v1.SEVPolicy"
@@ -15856,6 +15860,10 @@
     "properties": {
      "encryptedState": {
       "description": "SEV-ES is required. Defaults to false.",
+      "type": "boolean"
+     },
+     "secureNestedPaging": {
+      "description": "SEV-SNP is required. Defaults to false.",
       "type": "boolean"
      }
     }

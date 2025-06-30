@@ -397,12 +397,14 @@ func (SEV) SwaggerDoc() map[string]string {
 		"attestation": "If specified, run the attestation process for a vmi.\n+opitonal",
 		"session":     "Base64 encoded session blob.",
 		"dhCert":      "Base64 encoded guest owner's Diffie-Hellman key.",
+		"hostData":    "32-byte, base64-encoded, user-defined blob to provide to the guest.",
 	}
 }
 
 func (SEVPolicy) SwaggerDoc() map[string]string {
 	return map[string]string{
-		"encryptedState": "SEV-ES is required.\nDefaults to false.\n+optional",
+		"encryptedState":     "SEV-ES is required.\nDefaults to false.\n+optional",
+		"secureNestedPaging": "SEV-SNP is required.\nDefaults to false.\n+optional",
 	}
 }
 

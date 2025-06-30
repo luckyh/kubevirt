@@ -23682,6 +23682,13 @@ func schema_kubevirtio_api_core_v1_SEV(ref common.ReferenceCallback) common.Open
 							Format:      "",
 						},
 					},
+					"hostData": {
+						SchemaProps: spec.SchemaProps{
+							Description: "32-byte, base64-encoded, user-defined blob to provide to the guest.",
+							Type:        []string{"string"},
+							Format:      "",
+						},
+					},
 				},
 			},
 		},
@@ -23819,6 +23826,13 @@ func schema_kubevirtio_api_core_v1_SEVPolicy(ref common.ReferenceCallback) commo
 					"encryptedState": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SEV-ES is required. Defaults to false.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
+					"secureNestedPaging": {
+						SchemaProps: spec.SchemaProps{
+							Description: "SEV-SNP is required. Defaults to false.",
 							Type:        []string{"boolean"},
 							Format:      "",
 						},

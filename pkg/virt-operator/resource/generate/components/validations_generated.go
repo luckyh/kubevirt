@@ -6865,6 +6865,10 @@ var CRDsValidation map[string]string = map[string]string{
                               description: Base64 encoded guest owner's Diffie-Hellman
                                 key.
                               type: string
+                            hostData:
+                              description: 32-byte, base64-encoded, user-defined blob
+                                to provide to the guest.
+                              type: string
                             policy:
                               description: |-
                                 Guest policy flags as defined in AMD SEV API specification.
@@ -6873,6 +6877,11 @@ var CRDsValidation map[string]string = map[string]string{
                                 encryptedState:
                                   description: |-
                                     SEV-ES is required.
+                                    Defaults to false.
+                                  type: boolean
+                                secureNestedPaging:
+                                  description: |-
+                                    SEV-SNP is required.
                                     Defaults to false.
                                   type: boolean
                               type: object
@@ -8942,6 +8951,10 @@ var CRDsValidation map[string]string = map[string]string{
                 dhCert:
                   description: Base64 encoded guest owner's Diffie-Hellman key.
                   type: string
+                hostData:
+                  description: 32-byte, base64-encoded, user-defined blob to provide
+                    to the guest.
+                  type: string
                 policy:
                   description: |-
                     Guest policy flags as defined in AMD SEV API specification.
@@ -8950,6 +8963,11 @@ var CRDsValidation map[string]string = map[string]string{
                     encryptedState:
                       description: |-
                         SEV-ES is required.
+                        Defaults to false.
+                      type: boolean
+                    secureNestedPaging:
+                      description: |-
+                        SEV-SNP is required.
                         Defaults to false.
                       type: boolean
                   type: object
@@ -12158,6 +12176,10 @@ var CRDsValidation map[string]string = map[string]string{
                     dhCert:
                       description: Base64 encoded guest owner's Diffie-Hellman key.
                       type: string
+                    hostData:
+                      description: 32-byte, base64-encoded, user-defined blob to provide
+                        to the guest.
+                      type: string
                     policy:
                       description: |-
                         Guest policy flags as defined in AMD SEV API specification.
@@ -12166,6 +12188,11 @@ var CRDsValidation map[string]string = map[string]string{
                         encryptedState:
                           description: |-
                             SEV-ES is required.
+                            Defaults to false.
+                          type: boolean
+                        secureNestedPaging:
+                          description: |-
+                            SEV-SNP is required.
                             Defaults to false.
                           type: boolean
                       type: object
@@ -15376,6 +15403,10 @@ var CRDsValidation map[string]string = map[string]string{
                     dhCert:
                       description: Base64 encoded guest owner's Diffie-Hellman key.
                       type: string
+                    hostData:
+                      description: 32-byte, base64-encoded, user-defined blob to provide
+                        to the guest.
+                      type: string
                     policy:
                       description: |-
                         Guest policy flags as defined in AMD SEV API specification.
@@ -15384,6 +15415,11 @@ var CRDsValidation map[string]string = map[string]string{
                         encryptedState:
                           description: |-
                             SEV-ES is required.
+                            Defaults to false.
+                          type: boolean
+                        secureNestedPaging:
+                          description: |-
+                            SEV-SNP is required.
                             Defaults to false.
                           type: boolean
                       type: object
@@ -17817,6 +17853,10 @@ var CRDsValidation map[string]string = map[string]string{
                               description: Base64 encoded guest owner's Diffie-Hellman
                                 key.
                               type: string
+                            hostData:
+                              description: 32-byte, base64-encoded, user-defined blob
+                                to provide to the guest.
+                              type: string
                             policy:
                               description: |-
                                 Guest policy flags as defined in AMD SEV API specification.
@@ -17825,6 +17865,11 @@ var CRDsValidation map[string]string = map[string]string{
                                 encryptedState:
                                   description: |-
                                     SEV-ES is required.
+                                    Defaults to false.
+                                  type: boolean
+                                secureNestedPaging:
+                                  description: |-
+                                    SEV-SNP is required.
                                     Defaults to false.
                                   type: boolean
                               type: object
@@ -19174,6 +19219,10 @@ var CRDsValidation map[string]string = map[string]string{
                 dhCert:
                   description: Base64 encoded guest owner's Diffie-Hellman key.
                   type: string
+                hostData:
+                  description: 32-byte, base64-encoded, user-defined blob to provide
+                    to the guest.
+                  type: string
                 policy:
                   description: |-
                     Guest policy flags as defined in AMD SEV API specification.
@@ -19182,6 +19231,11 @@ var CRDsValidation map[string]string = map[string]string{
                     encryptedState:
                       description: |-
                         SEV-ES is required.
+                        Defaults to false.
+                      type: boolean
+                    secureNestedPaging:
+                      description: |-
+                        SEV-SNP is required.
                         Defaults to false.
                       type: boolean
                   type: object
@@ -22338,6 +22392,10 @@ var CRDsValidation map[string]string = map[string]string{
                                       description: Base64 encoded guest owner's Diffie-Hellman
                                         key.
                                       type: string
+                                    hostData:
+                                      description: 32-byte, base64-encoded, user-defined
+                                        blob to provide to the guest.
+                                      type: string
                                     policy:
                                       description: |-
                                         Guest policy flags as defined in AMD SEV API specification.
@@ -22346,6 +22404,11 @@ var CRDsValidation map[string]string = map[string]string{
                                         encryptedState:
                                           description: |-
                                             SEV-ES is required.
+                                            Defaults to false.
+                                          type: boolean
+                                        secureNestedPaging:
+                                          description: |-
+                                            SEV-SNP is required.
                                             Defaults to false.
                                           type: boolean
                                       type: object
@@ -27550,6 +27613,10 @@ var CRDsValidation map[string]string = map[string]string{
                                           description: Base64 encoded guest owner's
                                             Diffie-Hellman key.
                                           type: string
+                                        hostData:
+                                          description: 32-byte, base64-encoded, user-defined
+                                            blob to provide to the guest.
+                                          type: string
                                         policy:
                                           description: |-
                                             Guest policy flags as defined in AMD SEV API specification.
@@ -27558,6 +27625,11 @@ var CRDsValidation map[string]string = map[string]string{
                                             encryptedState:
                                               description: |-
                                                 SEV-ES is required.
+                                                Defaults to false.
+                                              type: boolean
+                                            secureNestedPaging:
+                                              description: |-
+                                                SEV-SNP is required.
                                                 Defaults to false.
                                               type: boolean
                                           type: object
